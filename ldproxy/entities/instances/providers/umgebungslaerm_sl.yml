@@ -1,0 +1,39 @@
+---
+id: umgebungslaerm_sl
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25832
+  forceAxisOrder: NONE
+connectionInfo:
+  database: umgebungslaerm_sl
+  host: 127.0.0.1
+  user: postgres
+  password: postgres
+  schemas:
+  - public
+sourcePathDefaults:
+  primaryKey: ogc_fid
+  sortKey: ogc_fid
+types:
+  lden_sl:
+    sourcePath: /lden_sl
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+      dba:
+        sourcePath: dba
+        type: INTEGER

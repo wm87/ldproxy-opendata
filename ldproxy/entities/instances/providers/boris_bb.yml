@@ -1,0 +1,217 @@
+---
+id: boris_bb
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25833
+  forceAxisOrder: NONE
+connectionInfo:
+  database: boris_bb
+  host: localhost
+  user: postgres
+  password: postgres
+  schemas:
+  - public
+sourcePathDefaults:
+  primaryKey: gid
+  sortKey: gid
+types:
+  boris_bb:
+    sourcePath: /boris_bb
+    properties:
+      gid:
+        sourcePath: gid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      gesl:
+        sourcePath: gesl
+        type: STRING
+      gena:
+        sourcePath: gena
+        type: STRING
+      gasl:
+        sourcePath: gasl
+        type: STRING
+      gabe:
+        sourcePath: gabe
+        type: STRING
+      genu:
+        sourcePath: genu
+        type: STRING
+      gema:
+        sourcePath: gema
+        type: STRING
+      ortst:
+        sourcePath: ortst
+        type: STRING
+      wnum:
+        sourcePath: wnum
+        type: STRING
+      brw:
+        sourcePath: brw
+        type: STRING
+      wae:
+        sourcePath: wae
+        type: STRING
+      stag:
+        sourcePath: stag
+        type: STRING
+      brke:
+        sourcePath: brke
+        type: STRING
+      bedw:
+        sourcePath: bedw
+        type: STRING
+      plz:
+        sourcePath: plz
+        type: STRING
+      basbe:
+        sourcePath: basbe
+        type: STRING
+      basma:
+        sourcePath: basma
+        type: STRING
+      xybrw:
+        sourcePath: xybrw
+        type: STRING
+      posb:
+        sourcePath: posb
+        type: STRING
+      posa:
+        sourcePath: posa
+        type: STRING
+      apma:
+        sourcePath: apma
+        type: STRING
+      bezug:
+        sourcePath: bezug
+        type: STRING
+      epsg:
+        sourcePath: epsg
+        type: STRING
+      entw:
+        sourcePath: entw
+        type: STRING
+      beit:
+        sourcePath: beit
+        type: STRING
+      nuta:
+        sourcePath: nuta
+        type: STRING
+      ergnuta:
+        sourcePath: ergnuta
+        type: STRING
+      bauw:
+        sourcePath: bauw
+        type: STRING
+      gez:
+        sourcePath: gez
+        type: STRING
+      gezm:
+        sourcePath: gezm
+        type: STRING
+      wgfz:
+        sourcePath: wgfz
+        type: STRING
+      wgfzm:
+        sourcePath: wgfzm
+        type: STRING
+      grz:
+        sourcePath: grz
+        type: STRING
+      grzm:
+        sourcePath: grzm
+        type: STRING
+      bmz:
+        sourcePath: bmz
+        type: STRING
+      bmzm:
+        sourcePath: bmzm
+        type: STRING
+      flae:
+        sourcePath: flae
+        type: STRING
+      flaem:
+        sourcePath: flaem
+        type: STRING
+      fmass:
+        sourcePath: fmass
+        type: STRING
+      gtie:
+        sourcePath: gtie
+        type: STRING
+      gtiem:
+        sourcePath: gtiem
+        type: STRING
+      gbrei:
+        sourcePath: gbrei
+        type: STRING
+      gbreim:
+        sourcePath: gbreim
+        type: STRING
+      erve:
+        sourcePath: erve
+        type: STRING
+      verg:
+        sourcePath: verg
+        type: STRING
+      verf:
+        sourcePath: verf
+        type: STRING
+      vnum:
+        sourcePath: vnum
+        type: STRING
+      bod:
+        sourcePath: bod
+        type: STRING
+      acza:
+        sourcePath: acza
+        type: STRING
+      aczam:
+        sourcePath: aczam
+        type: STRING
+      grza:
+        sourcePath: grza
+        type: STRING
+      grzam:
+        sourcePath: grzam
+        type: STRING
+      aufw:
+        sourcePath: aufw
+        type: STRING
+      weer:
+        sourcePath: weer
+        type: STRING
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      bem:
+        sourcePath: bem
+        type: STRING
+      frei:
+        sourcePath: frei
+        type: STRING
+      brzname:
+        sourcePath: brzname
+        type: STRING
+      umart:
+        sourcePath: umart
+        type: STRING
+      lumnum:
+        sourcePath: lumnum
+        type: STRING
+      status:
+        sourcePath: status
+        type: STRING
+      degl:
+        sourcePath: degl
+        type: STRING
+      geom_point:
+        sourcePath: geom_point
+        type: GEOMETRY
+        geometryType: POINT

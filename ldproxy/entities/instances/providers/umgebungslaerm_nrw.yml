@@ -1,0 +1,66 @@
+---
+id: umgebungslaerm_nrw
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25832
+  forceAxisOrder: NONE
+connectionInfo:
+  database: umgebungslaerm_nrw
+  host: 127.0.0.1
+  user: postgres
+  password: postgres
+  schemas:
+  - ogr_system_tables
+  - public
+sourcePathDefaults:
+  primaryKey: ogc_fid
+  sortKey: ogc_fid
+types:
+  metadata:
+    sourcePath: /metadata
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        excludedScopes:
+        - RECEIVABLE
+      schema_name:
+        sourcePath: schema_name
+        type: STRING
+      table_name:
+        sourcePath: table_name
+        type: STRING
+      metadata:
+        sourcePath: metadata
+        type: STRING
+  str_isof_ngt:
+    sourcePath: /str_isof_ngt
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      art:
+        sourcePath: art
+        type: STRING
+      pegel:
+        sourcePath: pegel
+        type: STRING
+      dba:
+        sourcePath: dba
+        type: FLOAT
+      text:
+        sourcePath: text
+        type: STRING
+      stiftnum:
+        sourcePath: stiftnum
+        type: STRING
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POLYGON

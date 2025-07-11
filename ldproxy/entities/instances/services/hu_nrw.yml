@@ -1,0 +1,10 @@
+---
+id: hu_nrw
+label: hu_nrw
+enabled: true
+serviceType: OGC_API
+collections:
+  hu_nrw:
+    id: hu_nrw
+    label: hu_nrw
+    enabled: true

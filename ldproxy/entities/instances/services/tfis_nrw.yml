@@ -1,0 +1,66 @@
+---
+id: tfis_nrw
+label: tfis_nrw
+enabled: true
+serviceType: OGC_API
+collections:
+  metadata:
+    id: metadata
+    label: metadata
+    enabled: true
+  aussichtspunkte:
+    id: aussichtspunkte
+    label: aussichtspunkte
+    enabled: true
+  burgen_denkmaeler_etc:
+    id: burgen_denkmaeler_etc
+    label: burgen_denkmaeler_etc
+    enabled: true
+  infrastruktur_wassersport:
+    id: infrastruktur_wassersport
+    label: infrastruktur_wassersport
+    enabled: true
+  museen:
+    id: museen
+    label: museen
+    enabled: true
+  natur:
+    id: natur
+    label: natur
+    enabled: true
+  schifffahrt:
+    id: schifffahrt
+    label: schifffahrt
+    enabled: true
+  schifffahrt_kennzeichnung:
+    id: schifffahrt_kennzeichnung
+    label: schifffahrt_kennzeichnung
+    enabled: true
+  sport_baden:
+    id: sport_baden
+    label: sport_baden
+    enabled: true
+  theater_musik:
+    id: theater_musik
+    label: theater_musik
+    enabled: true
+  touristikinformation:
+    id: touristikinformation
+    label: touristikinformation
+    enabled: true
+  unterkunft_rast:
+    id: unterkunft_rast
+    label: unterkunft_rast
+    enabled: true
+  verkehr:
+    id: verkehr
+    label: verkehr
+    enabled: true
+  wanderwege:
+    id: wanderwege
+    label: wanderwege
+    enabled: true
+  wanderwege_kennzeichnung:
+    id: wanderwege_kennzeichnung
+    label: wanderwege_kennzeichnung
+    enabled: true

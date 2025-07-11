@@ -1,0 +1,45 @@
+---
+id: hu_nrw
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25832
+  forceAxisOrder: NONE
+connectionInfo:
+  database: hu_nrw
+  host: localhost
+  user: postgres
+  password: postgres
+  schemas:
+  - public
+sourcePathDefaults:
+  primaryKey: gid
+  sortKey: gid
+types:
+  hu_nrw:
+    sourcePath: /hu_nrw
+    properties:
+      gid:
+        sourcePath: gid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      ags:
+        sourcePath: ags
+        type: STRING
+      oi:
+        sourcePath: oi
+        type: STRING
+      gfk:
+        sourcePath: gfk
+        type: STRING
+      aktualitae:
+        sourcePath: aktualitae
+        type: STRING
+      geom:
+        sourcePath: geom
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON

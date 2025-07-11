@@ -1,0 +1,21 @@
+
+services:
+  ldproxy:
+    image: iide/ldproxy:4.4.0
+    container_name: ldproxy
+    network_mode: "host"
+    volumes:
+      - ./ldproxy:/ldproxy/data
+    environment:
+      - EXTERNAL_URL=http://localhost:7080
+    restart: unless-stopped
+
+  ldproxy-editor:
+    image: ghcr.io/ldproxy/editor
+    container_name: ldproxy-editor
+    #network_mode: "host"
+    ports:
+      - "8080:80"
+    volumes:
+      - ./ldproxy:/data
+    restart: unless-stopped

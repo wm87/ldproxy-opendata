@@ -1,0 +1,11 @@
+---
+api:
+- buildingBlock: FOUNDATION
+  includeLinkHeader: true
+  useLangParameter: false
+  apiCatalogLabel: 'Geo-APIs using ldproxy'
+  apiCatalogDescription: 'The APIs below are available as examples for Web APIs that can be set up with <a href="https://github.com/interactive-instruments/ldproxy">ldproxy</a>.'
+- buildingBlock: FEATURES_CORE
+  coordinatePrecision:
+    metre: 2
+    degree: 7

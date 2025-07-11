@@ -1,0 +1,4935 @@
+---
+id: aaa_atkis_sa
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25832
+  forceAxisOrder: NONE
+connectionInfo:
+  database: aaa_atkis_sa
+  host: 127.0.0.1
+  user: postgres
+  password: postgres
+  schemas:
+  - public
+sourcePathDefaults:
+  primaryKey: ogc_fid
+  sortKey: ogc_fid
+types:
+  ax_bahnstrecke:
+    sourcePath: /ax_bahnstrecke
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bkt:
+        sourcePath: bkt
+        type: STRING
+      elk:
+        sourcePath: elk
+        type: STRING
+      gls:
+        sourcePath: gls
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      nrb:
+        sourcePath: nrb
+        type: STRING
+      spw:
+        sourcePath: spw
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_bahnverkehr:
+    sourcePath: /ax_bahnverkehr
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_bahnverkehrsanlage:
+    sourcePath: /ax_bahnverkehrsanlage
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bfk:
+        sourcePath: bfk
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      dhu:
+        sourcePath: dhu
+        type: FLOAT
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_bauwerkimgewaesserbereich:
+    sourcePath: /ax_bauwerkimgewaesserbereich
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bfk:
+        sourcePath: bfk
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      dhu:
+        sourcePath: dhu
+        type: FLOAT
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_bauwerkimverkehrsbereich:
+    sourcePath: /ax_bauwerkimverkehrsbereich
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bfk:
+        sourcePath: bfk
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      dhu:
+        sourcePath: dhu
+        type: FLOAT
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_bauwerkoderanlagefuerindustrieundgewerbe:
+    sourcePath: /ax_bauwerkoderanlagefuerindustrieundgewerbe
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      atp:
+        sourcePath: atp
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofl:
+        sourcePath: ofl
+        type: STRING
+      pro:
+        sourcePath: pro
+        type: STRING
+      spe:
+        sourcePath: spe
+        type: STRING
+      spo:
+        sourcePath: spo
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_bauwerkoderanlagefuersportfreizeitunderholung:
+    sourcePath: /ax_bauwerkoderanlagefuersportfreizeitunderholung
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      atp:
+        sourcePath: atp
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofl:
+        sourcePath: ofl
+        type: STRING
+      pro:
+        sourcePath: pro
+        type: STRING
+      spe:
+        sourcePath: spe
+        type: STRING
+      spo:
+        sourcePath: spo
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_bergbaubetrieb:
+    sourcePath: /ax_bergbaubetrieb
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_dammwalldeich:
+    sourcePath: /ax_dammwalldeich
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hhl:
+        sourcePath: hhl
+        type: FLOAT
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      tfe:
+        sourcePath: tfe
+        type: FLOAT
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_denkmalschutzrecht:
+    sourcePath: /ax_denkmalschutzrecht
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      adf:
+        sourcePath: adf
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_einrichtungenfuerdenschiffsverkehr:
+    sourcePath: /ax_einrichtungenfuerdenschiffsverkehr
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bfk:
+        sourcePath: bfk
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      dhu:
+        sourcePath: dhu
+        type: FLOAT
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_fahrbahnachse:
+    sourcePath: /ax_fahrbahnachse
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      bdi:
+        sourcePath: bdi
+        type: STRING
+      bdu:
+        sourcePath: bdu
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bfs:
+        sourcePath: bfs
+        type: STRING
+      brf:
+        sourcePath: brf
+        type: FLOAT
+      brv:
+        sourcePath: brv
+        type: INTEGER
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      fsz:
+        sourcePath: fsz
+        type: INTEGER
+      ftr:
+        sourcePath: ftr
+        type: STRING
+      ibd:
+        sourcePath: ibd
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      wdm:
+        sourcePath: wdm
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_fahrwegachse:
+    sourcePath: /ax_fahrwegachse
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bef:
+        sourcePath: bef
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      brv:
+        sourcePath: brv
+        type: INTEGER
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      mkg:
+        sourcePath: mkg
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_felsenfelsblockfelsnadel:
+    sourcePath: /ax_felsenfelsblockfelsnadel
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_flaechebesondererfunktionalerpraegung:
+    sourcePath: /ax_flaechebesondererfunktionalerpraegung
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_flaechegemischternutzung:
+    sourcePath: /ax_flaechegemischternutzung
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_fliessgewaesser:
+    sourcePath: /ax_fliessgewaesser
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      gwk:
+        sourcePath: gwk
+        type: STRING
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      idn:
+        sourcePath: idn
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ntz:
+        sourcePath: ntz
+        type: STRING
+      sfk:
+        sourcePath: sfk
+        type: STRING
+      tid:
+        sourcePath: tid
+        type: STRING
+      wdm:
+        sourcePath: wdm
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_flugverkehr:
+    sourcePath: /ax_flugverkehr
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ntz:
+        sourcePath: ntz
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_flugverkehrsanlage:
+    sourcePath: /ax_flugverkehrsanlage
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bfk:
+        sourcePath: bfk
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      dhu:
+        sourcePath: dhu
+        type: FLOAT
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_friedhof:
+    sourcePath: /ax_friedhof
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_gebiet_bundesland:
+    sourcePath: /ax_gebiet_bundesland
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      adm:
+        sourcePath: adm
+        type: STRING
+      bez_gem:
+        sourcePath: bez_gem
+        type: STRING
+      bez_krs:
+        sourcePath: bez_krs
+        type: STRING
+      bez_lan:
+        sourcePath: bez_lan
+        type: STRING
+      bez_rbz:
+        sourcePath: bez_rbz
+        type: STRING
+      bez_vwg:
+        sourcePath: bez_vwg
+        type: STRING
+      sch:
+        sourcePath: sch
+        type: STRING
+      avg:
+        sourcePath: avg
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_gebiet_kreis:
+    sourcePath: /ax_gebiet_kreis
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      adm:
+        sourcePath: adm
+        type: STRING
+      bez_gem:
+        sourcePath: bez_gem
+        type: STRING
+      bez_krs:
+        sourcePath: bez_krs
+        type: STRING
+      bez_lan:
+        sourcePath: bez_lan
+        type: STRING
+      bez_rbz:
+        sourcePath: bez_rbz
+        type: STRING
+      bez_vwg:
+        sourcePath: bez_vwg
+        type: STRING
+      sch:
+        sourcePath: sch
+        type: STRING
+      avg:
+        sourcePath: avg
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_gebietsgrenze:
+    sourcePath: /ax_gebietsgrenze
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agz:
+        sourcePath: agz
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_gehoelz:
+    sourcePath: /ax_gehoelz
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_gelaendekante:
+    sourcePath: /ax_gelaendekante
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hhl:
+        sourcePath: hhl
+        type: FLOAT
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      tfe:
+        sourcePath: tfe
+        type: FLOAT
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_gewaesserachse:
+    sourcePath: /ax_gewaesserachse
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      brg:
+        sourcePath: brg
+        type: INTEGER
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      flr:
+        sourcePath: flr
+        type: INTEGER
+      gwk:
+        sourcePath: gwk
+        type: STRING
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      idn:
+        sourcePath: idn
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      sfk:
+        sourcePath: sfk
+        type: STRING
+      wdm:
+        sourcePath: wdm
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_gewaessermerkmal:
+    sourcePath: /ax_gewaessermerkmal
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hws:
+        sourcePath: hws
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_gewaesserstationierungsachse:
+    sourcePath: /ax_gewaesserstationierungsachse
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      aga:
+        sourcePath: aga
+        type: STRING
+      flr:
+        sourcePath: flr
+        type: INTEGER
+      gwk:
+        sourcePath: gwk
+        type: STRING
+      idn:
+        sourcePath: idn
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_gleis:
+    sourcePath: /ax_gleis
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bkt:
+        sourcePath: bkt
+        type: STRING
+      elk:
+        sourcePath: elk
+        type: STRING
+      gls:
+        sourcePath: gls
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      nrb:
+        sourcePath: nrb
+        type: STRING
+      spw:
+        sourcePath: spw
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_hafen:
+    sourcePath: /ax_hafen
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      hfk:
+        sourcePath: hfk
+        type: STRING
+      kon:
+        sourcePath: kon
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ntz:
+        sourcePath: ntz
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_hafenbecken:
+    sourcePath: /ax_hafenbecken
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      gwk:
+        sourcePath: gwk
+        type: STRING
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      idn:
+        sourcePath: idn
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ntz:
+        sourcePath: ntz
+        type: STRING
+      sfk:
+        sourcePath: sfk
+        type: STRING
+      tid:
+        sourcePath: tid
+        type: STRING
+      wdm:
+        sourcePath: wdm
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_halde:
+    sourcePath: /ax_halde
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_heide:
+    sourcePath: /ax_heide
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_historischesbauwerkoderhistorischeeinrichtung:
+    sourcePath: /ax_historischesbauwerkoderhistorischeeinrichtung
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      atp:
+        sourcePath: atp
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofl:
+        sourcePath: ofl
+        type: STRING
+      pro:
+        sourcePath: pro
+        type: STRING
+      spe:
+        sourcePath: spe
+        type: STRING
+      spo:
+        sourcePath: spo
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_hoehenlinie:
+    sourcePath: /ax_hoehenlinie
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hhl:
+        sourcePath: hhl
+        type: FLOAT
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      tfe:
+        sourcePath: tfe
+        type: FLOAT
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_hoehleneingang:
+    sourcePath: /ax_hoehleneingang
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_industrieundgewerbeflaeche:
+    sourcePath: /ax_industrieundgewerbeflaeche
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_insel:
+    sourcePath: /ax_insel
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      ltp:
+        sourcePath: ltp
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_kommunalesgebiet:
+    sourcePath: /ax_kommunalesgebiet
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      adm:
+        sourcePath: adm
+        type: STRING
+      bez_gem:
+        sourcePath: bez_gem
+        type: STRING
+      bez_krs:
+        sourcePath: bez_krs
+        type: STRING
+      bez_lan:
+        sourcePath: bez_lan
+        type: STRING
+      bez_rbz:
+        sourcePath: bez_rbz
+        type: STRING
+      bez_vwg:
+        sourcePath: bez_vwg
+        type: STRING
+      sch:
+        sourcePath: sch
+        type: STRING
+      avg:
+        sourcePath: avg
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_landwirtschaft:
+    sourcePath: /ax_landwirtschaft
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      veg:
+        sourcePath: veg
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_leitung:
+    sourcePath: /ax_leitung
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      atp:
+        sourcePath: atp
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofl:
+        sourcePath: ofl
+        type: STRING
+      pro:
+        sourcePath: pro
+        type: STRING
+      spe:
+        sourcePath: spe
+        type: STRING
+      spg:
+        sourcePath: spg
+        type: INTEGER
+      spo:
+        sourcePath: spo
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_moor:
+    sourcePath: /ax_moor
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_naturumweltoderbodenschutzrecht:
+    sourcePath: /ax_naturumweltoderbodenschutzrecht
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      adf:
+        sourcePath: adf
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_ortslage:
+    sourcePath: /ax_ortslage
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_platz:
+    sourcePath: /ax_platz
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_schifffahrtsliniefaehrverkehr:
+    sourcePath: /ax_schifffahrtsliniefaehrverkehr
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_schiffsverkehr:
+    sourcePath: /ax_schiffsverkehr
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_schleuse:
+    sourcePath: /ax_schleuse
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      hfk:
+        sourcePath: hfk
+        type: STRING
+      kon:
+        sourcePath: kon
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ntz:
+        sourcePath: ntz
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_schutzzone:
+    sourcePath: /ax_schutzzone
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      adf:
+        sourcePath: adf
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      nrs:
+        sourcePath: nrs
+        type: STRING
+      num:
+        sourcePath: num
+        type: STRING
+      rzs:
+        sourcePath: rzs
+        type: STRING
+      sgn:
+        sourcePath: sgn
+        type: STRING
+      zon:
+        sourcePath: zon
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_seilbahnschwebebahn:
+    sourcePath: /ax_seilbahnschwebebahn
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bkt:
+        sourcePath: bkt
+        type: STRING
+      elk:
+        sourcePath: elk
+        type: STRING
+      gls:
+        sourcePath: gls
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      nrb:
+        sourcePath: nrb
+        type: STRING
+      spw:
+        sourcePath: spw
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_sickerstrecke:
+    sourcePath: /ax_sickerstrecke
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      gwk:
+        sourcePath: gwk
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_sonstigesbauwerkodersonstigeeinrichtung:
+    sourcePath: /ax_sonstigesbauwerkodersonstigeeinrichtung
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      atp:
+        sourcePath: atp
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofl:
+        sourcePath: ofl
+        type: STRING
+      pro:
+        sourcePath: pro
+        type: STRING
+      spe:
+        sourcePath: spe
+        type: STRING
+      spo:
+        sourcePath: spo
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_sonstigesrecht:
+    sourcePath: /ax_sonstigesrecht
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      adf:
+        sourcePath: adf
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      nrs:
+        sourcePath: nrs
+        type: STRING
+      num:
+        sourcePath: num
+        type: STRING
+      rzs:
+        sourcePath: rzs
+        type: STRING
+      sgn:
+        sourcePath: sgn
+        type: STRING
+      zon:
+        sourcePath: zon
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_sportfreizeitunderholungsflaeche:
+    sourcePath: /ax_sportfreizeitunderholungsflaeche
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_stehendesgewaesser:
+    sourcePath: /ax_stehendesgewaesser
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      gwk:
+        sourcePath: gwk
+        type: STRING
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      idn:
+        sourcePath: idn
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ntz:
+        sourcePath: ntz
+        type: STRING
+      sfk:
+        sourcePath: sfk
+        type: STRING
+      tid:
+        sourcePath: tid
+        type: STRING
+      wdm:
+        sourcePath: wdm
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_strassenachse:
+    sourcePath: /ax_strassenachse
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_z:
+        sourcePath: objart_z
+        type: STRING
+      objid_z:
+        sourcePath: objid_z
+        type: STRING
+      bdi:
+        sourcePath: bdi
+        type: STRING
+      bdu:
+        sourcePath: bdu
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bfs:
+        sourcePath: bfs
+        type: STRING
+      brf:
+        sourcePath: brf
+        type: FLOAT
+      brv:
+        sourcePath: brv
+        type: INTEGER
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      fsz:
+        sourcePath: fsz
+        type: INTEGER
+      ftr:
+        sourcePath: ftr
+        type: STRING
+      ibd:
+        sourcePath: ibd
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      wdm:
+        sourcePath: wdm
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      fdv_z_x:
+        sourcePath: fdv_z_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_strassenverkehr:
+    sourcePath: /ax_strassenverkehr
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_strassenverkehrsanlage:
+    sourcePath: /ax_strassenverkehrsanlage
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bfk:
+        sourcePath: bfk
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      dhu:
+        sourcePath: dhu
+        type: FLOAT
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_sumpf:
+    sourcePath: /ax_sumpf
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_tagebaugrubesteinbruch:
+    sourcePath: /ax_tagebaugrubesteinbruch
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_transportanlage:
+    sourcePath: /ax_transportanlage
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      atp:
+        sourcePath: atp
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofl:
+        sourcePath: ofl
+        type: STRING
+      pro:
+        sourcePath: pro
+        type: STRING
+      spe:
+        sourcePath: spe
+        type: STRING
+      spo:
+        sourcePath: spo
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_turm:
+    sourcePath: /ax_turm
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      objart_n:
+        sourcePath: objart_n
+        type: STRING
+      objid_n:
+        sourcePath: objid_n
+        type: STRING
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      gfk:
+        sourcePath: gfk
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hoh:
+        sourcePath: hoh
+        type: INTEGER
+      nam:
+        sourcePath: nam
+        type: STRING
+      ntz:
+        sourcePath: ntz
+        type: STRING
+      ofl:
+        sourcePath: ofl
+        type: STRING
+      wgf:
+        sourcePath: wgf
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      hnr:
+        sourcePath: hnr
+        type: STRING
+      pnr:
+        sourcePath: pnr
+        type: STRING
+      lnr:
+        sourcePath: lnr
+        type: STRING
+      sch:
+        sourcePath: sch
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_unlandvegetationsloseflaeche:
+    sourcePath: /ax_unlandvegetationsloseflaeche
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofm:
+        sourcePath: ofm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_vegetationsmerkmal:
+    sourcePath: /ax_vegetationsmerkmal
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bws:
+        sourcePath: bws
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_vorratsbehaelterspeicherbauwerk:
+    sourcePath: /ax_vorratsbehaelterspeicherbauwerk
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      atp:
+        sourcePath: atp
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      bro:
+        sourcePath: bro
+        type: FLOAT
+      bwf:
+        sourcePath: bwf
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      kma:
+        sourcePath: kma
+        type: FLOAT
+      nam:
+        sourcePath: nam
+        type: STRING
+      ofl:
+        sourcePath: ofl
+        type: STRING
+      pro:
+        sourcePath: pro
+        type: STRING
+      spe:
+        sourcePath: spe
+        type: STRING
+      spo:
+        sourcePath: spo
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_wald:
+    sourcePath: /ax_wald
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      veg:
+        sourcePath: veg
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_wasserspiegelhoehe:
+    sourcePath: /ax_wasserspiegelhoehe
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      hho:
+        sourcePath: hho
+        type: FLOAT
+      hws:
+        sourcePath: hws
+        type: FLOAT
+      hyd:
+        sourcePath: hyd
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  ax_wegpfadsteig:
+    sourcePath: /ax_wegpfadsteig
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      art:
+        sourcePath: art
+        type: STRING
+      bef:
+        sourcePath: bef
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      brv:
+        sourcePath: brv
+        type: INTEGER
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      mkg:
+        sourcePath: mkg
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      sts:
+        sourcePath: sts
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+  ax_wohnbauflaeche:
+    sourcePath: /ax_wohnbauflaeche
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      agt:
+        sourcePath: agt
+        type: STRING
+      beb:
+        sourcePath: beb
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      fgt:
+        sourcePath: fgt
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      peg:
+        sourcePath: peg
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      zus:
+        sourcePath: zus
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      shape_length:
+        sourcePath: shape_length
+        type: FLOAT
+      shape_area:
+        sourcePath: shape_area
+        type: FLOAT
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_POLYGON
+  ax_wohnplatz:
+    sourcePath: /ax_wohnplatz
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      land:
+        sourcePath: land
+        type: STRING
+      modellart:
+        sourcePath: modellart
+        type: STRING
+      objart:
+        sourcePath: objart
+        type: STRING
+      objart_txt:
+        sourcePath: objart_txt
+        type: STRING
+      objid:
+        sourcePath: objid
+        type: STRING
+      hdu_x:
+        sourcePath: hdu_x
+        type: INTEGER
+      beginn:
+        sourcePath: beginn
+        type: STRING
+      ende:
+        sourcePath: ende
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      ewz:
+        sourcePath: ewz
+        type: STRING
+      ltp:
+        sourcePath: ltp
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      znm:
+        sourcePath: znm
+        type: STRING
+      fdv_x:
+        sourcePath: fdv_x
+        type: INTEGER
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT

@@ -1,0 +1,1628 @@
+{
+  "version": 8,
+  "zoom": 12.0,
+  "bearing": 0.0,
+  "pitch": 0.0,
+  "sources": {
+    "osm": {
+      "tiles": [
+        "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ],
+      "scheme": "xyz",
+      "attribution": "&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors",
+      "type": "raster"
+    },
+    "blattschnitt_rp_wfs": {
+      "tiles": [
+        "{serviceUrl}/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt"
+      ],
+      "scheme": "xyz",
+      "type": "vector"
+    }
+  },
+  "layers": [
+    {
+      "id": "basemap",
+      "type": "raster",
+      "metadata": {},
+      "source": "osm",
+      "layout": {},
+      "paint": {}
+    },
+    {
+      "id": "raka.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "raka",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#3887be"
+      }
+    },
+    {
+      "id": "raka.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "raka",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#3887be",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "raka.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "raka",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#3887be",
+        "circle-stroke-width": 1,
+        "circle-color": "#3887be"
+      }
+    },
+    {
+      "id": "dtk5.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk5",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#56b881"
+      }
+    },
+    {
+      "id": "dtk5.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk5",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#56b881",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "dtk5.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk5",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#56b881",
+        "circle-stroke-width": 1,
+        "circle-color": "#56b881"
+      }
+    },
+    {
+      "id": "gk_10km.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "gk_10km",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#50667f"
+      }
+    },
+    {
+      "id": "gk_10km.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "gk_10km",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#50667f",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "gk_10km.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "gk_10km",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#50667f",
+        "circle-stroke-width": 1,
+        "circle-color": "#50667f"
+      }
+    },
+    {
+      "id": "lika.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "lika",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#41afa5"
+      }
+    },
+    {
+      "id": "lika.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "lika",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#41afa5",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "lika.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "lika",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#41afa5",
+        "circle-stroke-width": 1,
+        "circle-color": "#41afa5"
+      }
+    },
+    {
+      "id": "dtk5_utm.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk5_utm",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#e55e5e"
+      }
+    },
+    {
+      "id": "dtk5_utm.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk5_utm",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#e55e5e",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "dtk5_utm.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk5_utm",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#e55e5e",
+        "circle-stroke-width": 1,
+        "circle-color": "#e55e5e"
+      }
+    },
+    {
+      "id": "utm_10km.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "utm_10km",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#8a8acb"
+      }
+    },
+    {
+      "id": "utm_10km.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "utm_10km",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#8a8acb",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "utm_10km.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "utm_10km",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#8a8acb",
+        "circle-stroke-width": 1,
+        "circle-color": "#8a8acb"
+      }
+    },
+    {
+      "id": "dtkv10.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtkv10",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#ed6498"
+      }
+    },
+    {
+      "id": "dtkv10.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtkv10",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#ed6498",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "dtkv10.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtkv10",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#ed6498",
+        "circle-stroke-width": 1,
+        "circle-color": "#ed6498"
+      }
+    },
+    {
+      "id": "dtk25.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk25",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#fbb03b"
+      }
+    },
+    {
+      "id": "dtk25.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk25",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#fbb03b",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "dtk25.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk25",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#fbb03b",
+        "circle-stroke-width": 1,
+        "circle-color": "#fbb03b"
+      }
+    },
+    {
+      "id": "dtk50.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk50",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#28353d"
+      }
+    },
+    {
+      "id": "dtk50.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk50",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#28353d",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "dtk50.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk50",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#28353d",
+        "circle-stroke-width": 1,
+        "circle-color": "#28353d"
+      }
+    },
+    {
+      "id": "dtk100.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk100",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#f9886c"
+      }
+    },
+    {
+      "id": "dtk100.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk100",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#f9886c",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "dtk100.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "dtk100",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#f9886c",
+        "circle-stroke-width": 1,
+        "circle-color": "#f9886c"
+      }
+    },
+    {
+      "id": "soka25_1.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka25_1",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#3bb2d0"
+      }
+    },
+    {
+      "id": "soka25_1.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka25_1",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#3bb2d0",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "soka25_1.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka25_1",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#3bb2d0",
+        "circle-stroke-width": 1,
+        "circle-color": "#3bb2d0"
+      }
+    },
+    {
+      "id": "soka25_2.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka25_2",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#3887be"
+      }
+    },
+    {
+      "id": "soka25_2.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka25_2",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#3887be",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "soka25_2.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka25_2",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#3887be",
+        "circle-stroke-width": 1,
+        "circle-color": "#3887be"
+      }
+    },
+    {
+      "id": "soka50.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka50",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#56b881"
+      }
+    },
+    {
+      "id": "soka50.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka50",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#56b881",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "soka50.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka50",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#56b881",
+        "circle-stroke-width": 1,
+        "circle-color": "#56b881"
+      }
+    },
+    {
+      "id": "soka100.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka100",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#50667f"
+      }
+    },
+    {
+      "id": "soka100.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka100",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#50667f",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "soka100.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "soka100",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#50667f",
+        "circle-stroke-width": 1,
+        "circle-color": "#50667f"
+      }
+    },
+    {
+      "id": "hkpb.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpb",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#41afa5"
+      }
+    },
+    {
+      "id": "hkpb.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpb",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#41afa5",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkpb.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpb",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#41afa5",
+        "circle-stroke-width": 1,
+        "circle-color": "#41afa5"
+      }
+    },
+    {
+      "id": "hkpk.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#e55e5e"
+      }
+    },
+    {
+      "id": "hkpk.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#e55e5e",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkpk.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#e55e5e",
+        "circle-stroke-width": 1,
+        "circle-color": "#e55e5e"
+      }
+    },
+    {
+      "id": "hksk.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hksk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#8a8acb"
+      }
+    },
+    {
+      "id": "hksk.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hksk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#8a8acb",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hksk.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hksk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#8a8acb",
+        "circle-stroke-width": 1,
+        "circle-color": "#8a8acb"
+      }
+    },
+    {
+      "id": "hkst.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkst",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#ed6498"
+      }
+    },
+    {
+      "id": "hkst.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkst",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#ed6498",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkst.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkst",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#ed6498",
+        "circle-stroke-width": 1,
+        "circle-color": "#ed6498"
+      }
+    },
+    {
+      "id": "hktb.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hktb",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#fbb03b"
+      }
+    },
+    {
+      "id": "hktb.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hktb",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#fbb03b",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hktb.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hktb",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#fbb03b",
+        "circle-stroke-width": 1,
+        "circle-color": "#fbb03b"
+      }
+    },
+    {
+      "id": "hkwr.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkwr",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#28353d"
+      }
+    },
+    {
+      "id": "hkwr.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkwr",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#28353d",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkwr.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkwr",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#28353d",
+        "circle-stroke-width": 1,
+        "circle-color": "#28353d"
+      }
+    },
+    {
+      "id": "hktm.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hktm",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#f9886c"
+      }
+    },
+    {
+      "id": "hktm.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hktm",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#f9886c",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hktm.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hktm",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#f9886c",
+        "circle-stroke-width": 1,
+        "circle-color": "#f9886c"
+      }
+    },
+    {
+      "id": "hkfk.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkfk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#3bb2d0"
+      }
+    },
+    {
+      "id": "hkfk.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkfk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#3bb2d0",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkfk.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkfk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#3bb2d0",
+        "circle-stroke-width": 1,
+        "circle-color": "#3bb2d0"
+      }
+    },
+    {
+      "id": "hkpg.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpg",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#3887be"
+      }
+    },
+    {
+      "id": "hkpg.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpg",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#3887be",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkpg.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpg",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#3887be",
+        "circle-stroke-width": 1,
+        "circle-color": "#3887be"
+      }
+    },
+    {
+      "id": "hkpc.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpc",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#56b881"
+      }
+    },
+    {
+      "id": "hkpc.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpc",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#56b881",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkpc.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkpc",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#56b881",
+        "circle-stroke-width": 1,
+        "circle-color": "#56b881"
+      }
+    },
+    {
+      "id": "hkbk.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkbk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#50667f"
+      }
+    },
+    {
+      "id": "hkbk.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkbk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#50667f",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkbk.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkbk",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#50667f",
+        "circle-stroke-width": 1,
+        "circle-color": "#50667f"
+      }
+    },
+    {
+      "id": "hkub.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkub",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#41afa5"
+      }
+    },
+    {
+      "id": "hkub.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkub",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#41afa5",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "hkub.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "hkub",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#41afa5",
+        "circle-stroke-width": 1,
+        "circle-color": "#41afa5"
+      }
+    },
+    {
+      "id": "p10.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "p10",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#e55e5e"
+      }
+    },
+    {
+      "id": "p10.line",
+      "type": "line",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "p10",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#e55e5e",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "p10.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "blattschnitt_rp_wfs",
+      "source-layer": "p10",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#e55e5e",
+        "circle-stroke-width": 1,
+        "circle-color": "#e55e5e"
+      }
+    }
+  ]
+}

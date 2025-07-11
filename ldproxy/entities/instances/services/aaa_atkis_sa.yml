@@ -1,0 +1,286 @@
+---
+id: aaa_atkis_sa
+label: aaa_atkis_sa
+enabled: true
+serviceType: OGC_API
+collections:
+  ax_bahnstrecke:
+    id: ax_bahnstrecke
+    label: ax_bahnstrecke
+    enabled: true
+  ax_bahnverkehr:
+    id: ax_bahnverkehr
+    label: ax_bahnverkehr
+    enabled: true
+  ax_bahnverkehrsanlage:
+    id: ax_bahnverkehrsanlage
+    label: ax_bahnverkehrsanlage
+    enabled: true
+  ax_bauwerkimgewaesserbereich:
+    id: ax_bauwerkimgewaesserbereich
+    label: ax_bauwerkimgewaesserbereich
+    enabled: true
+  ax_bauwerkimverkehrsbereich:
+    id: ax_bauwerkimverkehrsbereich
+    label: ax_bauwerkimverkehrsbereich
+    enabled: true
+  ax_bauwerkoderanlagefuerindustrieundgewerbe:
+    id: ax_bauwerkoderanlagefuerindustrieundgewerbe
+    label: ax_bauwerkoderanlagefuerindustrieundgewerbe
+    enabled: true
+  ax_bauwerkoderanlagefuersportfreizeitunderholung:
+    id: ax_bauwerkoderanlagefuersportfreizeitunderholung
+    label: ax_bauwerkoderanlagefuersportfreizeitunderholung
+    enabled: true
+  ax_bergbaubetrieb:
+    id: ax_bergbaubetrieb
+    label: ax_bergbaubetrieb
+    enabled: true
+  ax_dammwalldeich:
+    id: ax_dammwalldeich
+    label: ax_dammwalldeich
+    enabled: true
+  ax_denkmalschutzrecht:
+    id: ax_denkmalschutzrecht
+    label: ax_denkmalschutzrecht
+    enabled: true
+  ax_einrichtungenfuerdenschiffsverkehr:
+    id: ax_einrichtungenfuerdenschiffsverkehr
+    label: ax_einrichtungenfuerdenschiffsverkehr
+    enabled: true
+  ax_fahrbahnachse:
+    id: ax_fahrbahnachse
+    label: ax_fahrbahnachse
+    enabled: true
+  ax_fahrwegachse:
+    id: ax_fahrwegachse
+    label: ax_fahrwegachse
+    enabled: true
+  ax_felsenfelsblockfelsnadel:
+    id: ax_felsenfelsblockfelsnadel
+    label: ax_felsenfelsblockfelsnadel
+    enabled: true
+  ax_flaechebesondererfunktionalerpraegung:
+    id: ax_flaechebesondererfunktionalerpraegung
+    label: ax_flaechebesondererfunktionalerpraegung
+    enabled: true
+  ax_flaechegemischternutzung:
+    id: ax_flaechegemischternutzung
+    label: ax_flaechegemischternutzung
+    enabled: true
+  ax_fliessgewaesser:
+    id: ax_fliessgewaesser
+    label: ax_fliessgewaesser
+    enabled: true
+  ax_flugverkehr:
+    id: ax_flugverkehr
+    label: ax_flugverkehr
+    enabled: true
+  ax_flugverkehrsanlage:
+    id: ax_flugverkehrsanlage
+    label: ax_flugverkehrsanlage
+    enabled: true
+  ax_friedhof:
+    id: ax_friedhof
+    label: ax_friedhof
+    enabled: true
+  ax_gebiet_bundesland:
+    id: ax_gebiet_bundesland
+    label: ax_gebiet_bundesland
+    enabled: true
+  ax_gebiet_kreis:
+    id: ax_gebiet_kreis
+    label: ax_gebiet_kreis
+    enabled: true
+  ax_gebietsgrenze:
+    id: ax_gebietsgrenze
+    label: ax_gebietsgrenze
+    enabled: true
+  ax_gehoelz:
+    id: ax_gehoelz
+    label: ax_gehoelz
+    enabled: true
+  ax_gelaendekante:
+    id: ax_gelaendekante
+    label: ax_gelaendekante
+    enabled: true
+  ax_gewaesserachse:
+    id: ax_gewaesserachse
+    label: ax_gewaesserachse
+    enabled: true
+  ax_gewaessermerkmal:
+    id: ax_gewaessermerkmal
+    label: ax_gewaessermerkmal
+    enabled: true
+  ax_gewaesserstationierungsachse:
+    id: ax_gewaesserstationierungsachse
+    label: ax_gewaesserstationierungsachse
+    enabled: true
+  ax_gleis:
+    id: ax_gleis
+    label: ax_gleis
+    enabled: true
+  ax_hafen:
+    id: ax_hafen
+    label: ax_hafen
+    enabled: true
+  ax_hafenbecken:
+    id: ax_hafenbecken
+    label: ax_hafenbecken
+    enabled: true
+  ax_halde:
+    id: ax_halde
+    label: ax_halde
+    enabled: true
+  ax_heide:
+    id: ax_heide
+    label: ax_heide
+    enabled: true
+  ax_historischesbauwerkoderhistorischeeinrichtung:
+    id: ax_historischesbauwerkoderhistorischeeinrichtung
+    label: ax_historischesbauwerkoderhistorischeeinrichtung
+    enabled: true
+  ax_hoehenlinie:
+    id: ax_hoehenlinie
+    label: ax_hoehenlinie
+    enabled: true
+  ax_hoehleneingang:
+    id: ax_hoehleneingang
+    label: ax_hoehleneingang
+    enabled: true
+  ax_industrieundgewerbeflaeche:
+    id: ax_industrieundgewerbeflaeche
+    label: ax_industrieundgewerbeflaeche
+    enabled: true
+  ax_insel:
+    id: ax_insel
+    label: ax_insel
+    enabled: true
+  ax_kommunalesgebiet:
+    id: ax_kommunalesgebiet
+    label: ax_kommunalesgebiet
+    enabled: true
+  ax_landwirtschaft:
+    id: ax_landwirtschaft
+    label: ax_landwirtschaft
+    enabled: true
+  ax_leitung:
+    id: ax_leitung
+    label: ax_leitung
+    enabled: true
+  ax_moor:
+    id: ax_moor
+    label: ax_moor
+    enabled: true
+  ax_naturumweltoderbodenschutzrecht:
+    id: ax_naturumweltoderbodenschutzrecht
+    label: ax_naturumweltoderbodenschutzrecht
+    enabled: true
+  ax_ortslage:
+    id: ax_ortslage
+    label: ax_ortslage
+    enabled: true
+  ax_platz:
+    id: ax_platz
+    label: ax_platz
+    enabled: true
+  ax_schifffahrtsliniefaehrverkehr:
+    id: ax_schifffahrtsliniefaehrverkehr
+    label: ax_schifffahrtsliniefaehrverkehr
+    enabled: true
+  ax_schiffsverkehr:
+    id: ax_schiffsverkehr
+    label: ax_schiffsverkehr
+    enabled: true
+  ax_schleuse:
+    id: ax_schleuse
+    label: ax_schleuse
+    enabled: true
+  ax_schutzzone:
+    id: ax_schutzzone
+    label: ax_schutzzone
+    enabled: true
+  ax_seilbahnschwebebahn:
+    id: ax_seilbahnschwebebahn
+    label: ax_seilbahnschwebebahn
+    enabled: true
+  ax_sickerstrecke:
+    id: ax_sickerstrecke
+    label: ax_sickerstrecke
+    enabled: true
+  ax_sonstigesbauwerkodersonstigeeinrichtung:
+    id: ax_sonstigesbauwerkodersonstigeeinrichtung
+    label: ax_sonstigesbauwerkodersonstigeeinrichtung
+    enabled: true
+  ax_sonstigesrecht:
+    id: ax_sonstigesrecht
+    label: ax_sonstigesrecht
+    enabled: true
+  ax_sportfreizeitunderholungsflaeche:
+    id: ax_sportfreizeitunderholungsflaeche
+    label: ax_sportfreizeitunderholungsflaeche
+    enabled: true
+  ax_stehendesgewaesser:
+    id: ax_stehendesgewaesser
+    label: ax_stehendesgewaesser
+    enabled: true
+  ax_strassenachse:
+    id: ax_strassenachse
+    label: ax_strassenachse
+    enabled: true
+  ax_strassenverkehr:
+    id: ax_strassenverkehr
+    label: ax_strassenverkehr
+    enabled: true
+  ax_strassenverkehrsanlage:
+    id: ax_strassenverkehrsanlage
+    label: ax_strassenverkehrsanlage
+    enabled: true
+  ax_sumpf:
+    id: ax_sumpf
+    label: ax_sumpf
+    enabled: true
+  ax_tagebaugrubesteinbruch:
+    id: ax_tagebaugrubesteinbruch
+    label: ax_tagebaugrubesteinbruch
+    enabled: true
+  ax_transportanlage:
+    id: ax_transportanlage
+    label: ax_transportanlage
+    enabled: true
+  ax_turm:
+    id: ax_turm
+    label: ax_turm
+    enabled: true
+  ax_unlandvegetationsloseflaeche:
+    id: ax_unlandvegetationsloseflaeche
+    label: ax_unlandvegetationsloseflaeche
+    enabled: true
+  ax_vegetationsmerkmal:
+    id: ax_vegetationsmerkmal
+    label: ax_vegetationsmerkmal
+    enabled: true
+  ax_vorratsbehaelterspeicherbauwerk:
+    id: ax_vorratsbehaelterspeicherbauwerk
+    label: ax_vorratsbehaelterspeicherbauwerk
+    enabled: true
+  ax_wald:
+    id: ax_wald
+    label: ax_wald
+    enabled: true
+  ax_wasserspiegelhoehe:
+    id: ax_wasserspiegelhoehe
+    label: ax_wasserspiegelhoehe
+    enabled: true
+  ax_wegpfadsteig:
+    id: ax_wegpfadsteig
+    label: ax_wegpfadsteig
+    enabled: true
+  ax_wohnbauflaeche:
+    id: ax_wohnbauflaeche
+    label: ax_wohnbauflaeche
+    enabled: true
+  ax_wohnplatz:
+    id: ax_wohnplatz
+    label: ax_wohnplatz
+    enabled: true

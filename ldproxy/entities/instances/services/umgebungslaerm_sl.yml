@@ -1,0 +1,10 @@
+---
+id: umgebungslaerm_sl
+label: umgebungslaerm_sl
+enabled: true
+serviceType: OGC_API
+collections:
+  lden_sl:
+    id: lden_sl
+    label: lden_sl
+    enabled: true

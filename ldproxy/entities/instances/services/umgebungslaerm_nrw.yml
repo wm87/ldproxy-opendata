@@ -1,0 +1,14 @@
+---
+id: umgebungslaerm_nrw
+label: umgebungslaerm_nrw
+enabled: true
+serviceType: OGC_API
+collections:
+  metadata:
+    id: metadata
+    label: metadata
+    enabled: true
+  str_isof_ngt:
+    id: str_isof_ngt
+    label: str_isof_ngt
+    enabled: true

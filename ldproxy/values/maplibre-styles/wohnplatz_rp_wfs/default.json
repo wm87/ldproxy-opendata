@@ -1,0 +1,94 @@
+{
+  "version": 8,
+  "zoom": 12.0,
+  "bearing": 0.0,
+  "pitch": 0.0,
+  "sources": {
+    "osm": {
+      "tiles": [
+        "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ],
+      "scheme": "xyz",
+      "attribution": "&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors",
+      "type": "raster"
+    },
+    "wohnplatz_rp_wfs": {
+      "tiles": [
+        "{serviceUrl}/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt"
+      ],
+      "scheme": "xyz",
+      "type": "vector"
+    }
+  },
+  "layers": [
+    {
+      "id": "basemap",
+      "type": "raster",
+      "metadata": {},
+      "source": "osm",
+      "layout": {},
+      "paint": {}
+    },
+    {
+      "id": "wohnplaetze.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "wohnplatz_rp_wfs",
+      "source-layer": "wohnplaetze",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#3887be"
+      }
+    },
+    {
+      "id": "wohnplaetze.line",
+      "type": "line",
+      "metadata": {},
+      "source": "wohnplatz_rp_wfs",
+      "source-layer": "wohnplaetze",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#3887be",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "wohnplaetze.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "wohnplatz_rp_wfs",
+      "source-layer": "wohnplaetze",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#3887be",
+        "circle-stroke-width": 1,
+        "circle-color": "#3887be"
+      }
+    }
+  ]
+}

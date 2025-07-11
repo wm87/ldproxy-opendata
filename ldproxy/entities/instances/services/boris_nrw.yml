@@ -1,0 +1,10 @@
+---
+id: boris_nrw
+label: boris_nrw
+enabled: true
+serviceType: OGC_API
+collections:
+  boris_nrw:
+    id: boris_nrw
+    label: boris_nrw
+    enabled: true

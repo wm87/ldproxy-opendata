@@ -1,0 +1,479 @@
+---
+id: tfis_nrw
+enabled: true
+providerType: FEATURE
+providerSubType: SQL
+nativeCrs:
+  code: 25832
+  forceAxisOrder: NONE
+connectionInfo:
+  database: touristik_nrw
+  host: 127.0.0.1
+  user: postgres
+  password: postgres
+  schemas:
+  - ogr_system_tables
+  - public
+sourcePathDefaults:
+  primaryKey: ogc_fid
+  sortKey: ogc_fid
+types:
+  metadata:
+    sourcePath: /metadata
+    properties:
+      id:
+        sourcePath: id
+        type: INTEGER
+        excludedScopes:
+        - RECEIVABLE
+      schema_name:
+        sourcePath: schema_name
+        type: STRING
+      table_name:
+        sourcePath: table_name
+        type: STRING
+      metadata:
+        sourcePath: metadata
+        type: STRING
+  aussichtspunkte:
+    sourcePath: /aussichtspunkte
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      blr:
+        sourcePath: blr
+        type: STRING
+      info_ext:
+        sourcePath: info_ext
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  burgen_denkmaeler_etc:
+    sourcePath: /burgen_denkmaeler_etc
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      info_ext:
+        sourcePath: info_ext
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+  infrastruktur_wassersport:
+    sourcePath: /infrastruktur_wassersport
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      info_ext:
+        sourcePath: info_ext
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  museen:
+    sourcePath: /museen
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  natur:
+    sourcePath: /natur
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      info_ext:
+        sourcePath: info_ext
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+  schifffahrt:
+    sourcePath: /schifffahrt
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+  schifffahrt_kennzeichnung:
+    sourcePath: /schifffahrt_kennzeichnung
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      sfuuid:
+        sourcePath: sfuuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+  sport_baden:
+    sourcePath: /sport_baden
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+  theater_musik:
+    sourcePath: /theater_musik
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+  touristikinformation:
+    sourcePath: /touristikinformation
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      hmp:
+        sourcePath: hmp
+        type: STRING
+      info_ext:
+        sourcePath: info_ext
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+  unterkunft_rast:
+    sourcePath: /unterkunft_rast
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      hmp:
+        sourcePath: hmp
+        type: STRING
+      info_ext:
+        sourcePath: info_ext
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+  verkehr:
+    sourcePath: /verkehr
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      fkt:
+        sourcePath: fkt
+        type: STRING
+      nam:
+        sourcePath: nam
+        type: STRING
+      info_ext:
+        sourcePath: info_ext
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: STRING
+  wanderwege:
+    sourcePath: /wanderwege
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: MULTI_LINE_STRING
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      wegname:
+        sourcePath: wegname
+        type: STRING
+      kat:
+        sourcePath: kat
+        type: STRING
+      pkt:
+        sourcePath: pkt
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      wgv:
+        sourcePath: wgv
+        type: STRING
+      sva:
+        sourcePath: sva
+        type: STRING
+      svh:
+        sourcePath: svh
+        type: STRING
+      scl:
+        sourcePath: scl
+        type: STRING
+      verein:
+        sourcePath: verein
+        type: STRING
+      olg:
+        sourcePath: olg
+        type: FLOAT
+      agl:
+        sourcePath: agl
+        type: FLOAT
+      art:
+        sourcePath: art
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: INTEGER
+  wanderwege_kennzeichnung:
+    sourcePath: /wanderwege_kennzeichnung
+    properties:
+      ogc_fid:
+        sourcePath: ogc_fid
+        type: INTEGER
+        role: ID
+        excludedScopes:
+        - RECEIVABLE
+      wkb_geometry:
+        sourcePath: wkb_geometry
+        type: GEOMETRY
+        role: PRIMARY_GEOMETRY
+        geometryType: POINT
+      uuid:
+        sourcePath: uuid
+        type: STRING
+      wegname:
+        sourcePath: wegname
+        type: STRING
+      kat:
+        sourcePath: kat
+        type: STRING
+      pkt:
+        sourcePath: pkt
+        type: STRING
+      bez:
+        sourcePath: bez
+        type: STRING
+      wgv:
+        sourcePath: wgv
+        type: STRING
+      sva:
+        sourcePath: sva
+        type: STRING
+      svh:
+        sourcePath: svh
+        type: STRING
+      scl:
+        sourcePath: scl
+        type: STRING
+      verein:
+        sourcePath: verein
+        type: STRING
+      olg:
+        sourcePath: olg
+        type: FLOAT
+      agl:
+        sourcePath: agl
+        type: FLOAT
+      art:
+        sourcePath: art
+        type: STRING
+      snr:
+        sourcePath: snr
+        type: INTEGER

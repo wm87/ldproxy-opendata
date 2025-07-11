@@ -1,0 +1,448 @@
+{
+  "version": 8,
+  "zoom": 12.0,
+  "bearing": 0.0,
+  "pitch": 0.0,
+  "sources": {
+    "osm": {
+      "tiles": [
+        "https://a.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://b.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "https://c.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      ],
+      "scheme": "xyz",
+      "attribution": "&copy; <a href=\"http://osm.org/copyright\">OpenStreetMap</a> contributors",
+      "type": "raster"
+    },
+    "verwaltungsgrenzen_rp_wfs": {
+      "tiles": [
+        "{serviceUrl}/tiles/WebMercatorQuad/{z}/{y}/{x}?f=mvt"
+      ],
+      "scheme": "xyz",
+      "type": "vector"
+    }
+  },
+  "layers": [
+    {
+      "id": "basemap",
+      "type": "raster",
+      "metadata": {},
+      "source": "osm",
+      "layout": {},
+      "paint": {}
+    },
+    {
+      "id": "fluren_rlp.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "fluren_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#3887be"
+      }
+    },
+    {
+      "id": "fluren_rlp.line",
+      "type": "line",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "fluren_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#3887be",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "fluren_rlp.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "fluren_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#3887be",
+        "circle-stroke-width": 1,
+        "circle-color": "#3887be"
+      }
+    },
+    {
+      "id": "gemarkungen_rlp.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "gemarkungen_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#56b881"
+      }
+    },
+    {
+      "id": "gemarkungen_rlp.line",
+      "type": "line",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "gemarkungen_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#56b881",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "gemarkungen_rlp.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "gemarkungen_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#56b881",
+        "circle-stroke-width": 1,
+        "circle-color": "#56b881"
+      }
+    },
+    {
+      "id": "gemeinde_rlp.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "gemeinde_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#50667f"
+      }
+    },
+    {
+      "id": "gemeinde_rlp.line",
+      "type": "line",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "gemeinde_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#50667f",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "gemeinde_rlp.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "gemeinde_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#50667f",
+        "circle-stroke-width": 1,
+        "circle-color": "#50667f"
+      }
+    },
+    {
+      "id": "verbandsgemeinde_rlp.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "verbandsgemeinde_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#41afa5"
+      }
+    },
+    {
+      "id": "verbandsgemeinde_rlp.line",
+      "type": "line",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "verbandsgemeinde_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#41afa5",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "verbandsgemeinde_rlp.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "verbandsgemeinde_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#41afa5",
+        "circle-stroke-width": 1,
+        "circle-color": "#41afa5"
+      }
+    },
+    {
+      "id": "landkreise_rlp.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "landkreise_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#e55e5e"
+      }
+    },
+    {
+      "id": "landkreise_rlp.line",
+      "type": "line",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "landkreise_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#e55e5e",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "landkreise_rlp.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "landkreise_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#e55e5e",
+        "circle-stroke-width": 1,
+        "circle-color": "#e55e5e"
+      }
+    },
+    {
+      "id": "vermka_rlp.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "vermka_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#8a8acb"
+      }
+    },
+    {
+      "id": "vermka_rlp.line",
+      "type": "line",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "vermka_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#8a8acb",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "vermka_rlp.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "vermka_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#8a8acb",
+        "circle-stroke-width": 1,
+        "circle-color": "#8a8acb"
+      }
+    },
+    {
+      "id": "landesgrenze_rlp.fill",
+      "type": "fill",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "landesgrenze_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {},
+      "paint": {
+        "fill-color": "#ed6498"
+      }
+    },
+    {
+      "id": "landesgrenze_rlp.line",
+      "type": "line",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "landesgrenze_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {},
+      "paint": {
+        "line-color": "#ed6498",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "landesgrenze_rlp.circle",
+      "type": "circle",
+      "metadata": {},
+      "source": "verwaltungsgrenzen_rp_wfs",
+      "source-layer": "landesgrenze_rlp",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {},
+      "paint": {
+        "circle-radius": 3,
+        "circle-opacity": 0.5,
+        "circle-stroke-color": "#ed6498",
+        "circle-stroke-width": 1,
+        "circle-color": "#ed6498"
+      }
+    }
+  ]
+}

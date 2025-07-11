@@ -1,0 +1,30 @@
+---
+id: umgebungslaerm_bb
+label: umgebungslaerm_bb
+enabled: true
+serviceType: OGC_API
+collections:
+  metadata:
+    id: metadata
+    label: metadata
+    enabled: true
+  bb_strasse_lden2017:
+    id: bb_strasse_lden2017
+    label: bb_strasse_lden2017
+    enabled: true
+  flug_lden2022:
+    id: flug_lden2022
+    label: flug_lden2022
+    enabled: true
+  pdm_industrie_lden2022:
+    id: pdm_industrie_lden2022
+    label: pdm_industrie_lden2022
+    enabled: true
+  pdm_schiene_lden2022:
+    id: pdm_schiene_lden2022
+    label: pdm_schiene_lden2022
+    enabled: true
+  pdm_strasse_lden2022:
+    id: pdm_strasse_lden2022
+    label: pdm_strasse_lden2022
+    enabled: true

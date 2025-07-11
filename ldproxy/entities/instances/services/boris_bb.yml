@@ -1,0 +1,10 @@
+---
+id: boris_bb
+label: boris_bb
+enabled: true
+serviceType: OGC_API
+collections:
+  boris_bb:
+    id: boris_bb
+    label: boris_bb
+    enabled: true

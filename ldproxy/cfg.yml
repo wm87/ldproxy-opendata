@@ -1,0 +1,30 @@
+---
+backgroundTasks:
+  maxThreads: 8
+modules:
+  minMaturity: PROPOSAL
+  minMaintenance: NONE
+#substitutions:
+#  enable:
+#    hu_nrw: true
+#    hu_rp: true
+logging:
+  level: OFF
+  sqlQueries: OFF
+  sqlResults: OFF
+  stackTraces: ON
+  appenders:
+    - type: console
+      timeZone: Europe/Berlin
+  loggers:
+    de.ii: INFO
+#auth:
+#  providers:
+#    oidc-ldproxy-integrated:
+#      type: OIDC
+#      endpoint: https://auth.ldproxy.net/realms/demo/.well-known/openid-configuration
+#      login:
+#        clientId: ldproxy-integrated
+#      claims:
+#        userName: preferred_username
+#        permissions: resource_access.roles

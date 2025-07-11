@@ -1,0 +1,546 @@
+---
+id: aaa_atkis_sl
+label: aaa_atkis_sl
+enabled: true
+serviceType: OGC_API
+collections:
+  metadata:
+    id: metadata
+    label: metadata
+    enabled: true
+  ax_bahnstrecke_line:
+    id: ax_bahnstrecke_line
+    label: ax_bahnstrecke_line
+    enabled: true
+  ax_bahnverkehr_poly:
+    id: ax_bahnverkehr_poly
+    label: ax_bahnverkehr_poly
+    enabled: true
+  ax_bahnverkehrsanlage_point:
+    id: ax_bahnverkehrsanlage_point
+    label: ax_bahnverkehrsanlage_point
+    enabled: true
+  ax_bahnverkehrsanlage_poly:
+    id: ax_bahnverkehrsanlage_poly
+    label: ax_bahnverkehrsanlage_poly
+    enabled: true
+  ax_bauwerkimgewaesserbereich_line:
+    id: ax_bauwerkimgewaesserbereich_line
+    label: ax_bauwerkimgewaesserbereich_line
+    enabled: true
+  ax_bauwerkimgewaesserbereich_point:
+    id: ax_bauwerkimgewaesserbereich_point
+    label: ax_bauwerkimgewaesserbereich_point
+    enabled: true
+  ax_bauwerkimgewaesserbereich_poly:
+    id: ax_bauwerkimgewaesserbereich_poly
+    label: ax_bauwerkimgewaesserbereich_poly
+    enabled: true
+  ax_bauwerkimverkehrsbereich_line:
+    id: ax_bauwerkimverkehrsbereich_line
+    label: ax_bauwerkimverkehrsbereich_line
+    enabled: true
+  ax_bauwerkimverkehrsbereich_poly:
+    id: ax_bauwerkimverkehrsbereich_poly
+    label: ax_bauwerkimverkehrsbereich_poly
+    enabled: true
+  ax_bauwerkoderanlagefuerindustrieundgewerbe_line:
+    id: ax_bauwerkoderanlagefuerindustrieundgewerbe_line
+    label: ax_bauwerkoderanlagefuerindustrieundgewerbe_line
+    enabled: true
+  ax_bauwerkoderanlagefuerindustrieundgewerbe_point:
+    id: ax_bauwerkoderanlagefuerindustrieundgewerbe_point
+    label: ax_bauwerkoderanlagefuerindustrieundgewerbe_point
+    enabled: true
+  ax_bauwerkoderanlagefuerindustrieundgewerbe_poly:
+    id: ax_bauwerkoderanlagefuerindustrieundgewerbe_poly
+    label: ax_bauwerkoderanlagefuerindustrieundgewerbe_poly
+    enabled: true
+  ax_bauwerkoderanlagefuersportfreizeitunderholung_line:
+    id: ax_bauwerkoderanlagefuersportfreizeitunderholung_line
+    label: ax_bauwerkoderanlagefuersportfreizeitunderholung_line
+    enabled: true
+  ax_bauwerkoderanlagefuersportfreizeitunderholung_poly:
+    id: ax_bauwerkoderanlagefuersportfreizeitunderholung_poly
+    label: ax_bauwerkoderanlagefuersportfreizeitunderholung_poly
+    enabled: true
+  ax_bergbaubetrieb_poly:
+    id: ax_bergbaubetrieb_poly
+    label: ax_bergbaubetrieb_poly
+    enabled: true
+  ax_dammwalldeich_line:
+    id: ax_dammwalldeich_line
+    label: ax_dammwalldeich_line
+    enabled: true
+  ax_denkmalschutzrecht_line:
+    id: ax_denkmalschutzrecht_line
+    label: ax_denkmalschutzrecht_line
+    enabled: true
+  ax_denkmalschutzrecht_point:
+    id: ax_denkmalschutzrecht_point
+    label: ax_denkmalschutzrecht_point
+    enabled: true
+  ax_denkmalschutzrecht_poly:
+    id: ax_denkmalschutzrecht_poly
+    label: ax_denkmalschutzrecht_poly
+    enabled: true
+  ax_einrichtungenfuerdenschiffsverkehr_line:
+    id: ax_einrichtungenfuerdenschiffsverkehr_line
+    label: ax_einrichtungenfuerdenschiffsverkehr_line
+    enabled: true
+  ax_einrichtungenfuerdenschiffsverkehr_point:
+    id: ax_einrichtungenfuerdenschiffsverkehr_point
+    label: ax_einrichtungenfuerdenschiffsverkehr_point
+    enabled: true
+  ax_einrichtungenfuerdenschiffsverkehr_poly:
+    id: ax_einrichtungenfuerdenschiffsverkehr_poly
+    label: ax_einrichtungenfuerdenschiffsverkehr_poly
+    enabled: true
+  ax_fahrbahnachse_line:
+    id: ax_fahrbahnachse_line
+    label: ax_fahrbahnachse_line
+    enabled: true
+  ax_fahrwegachse_line:
+    id: ax_fahrwegachse_line
+    label: ax_fahrwegachse_line
+    enabled: true
+  ax_felsenfelsblockfelsnadel_line:
+    id: ax_felsenfelsblockfelsnadel_line
+    label: ax_felsenfelsblockfelsnadel_line
+    enabled: true
+  ax_felsenfelsblockfelsnadel_point:
+    id: ax_felsenfelsblockfelsnadel_point
+    label: ax_felsenfelsblockfelsnadel_point
+    enabled: true
+  ax_felsenfelsblockfelsnadel_poly:
+    id: ax_felsenfelsblockfelsnadel_poly
+    label: ax_felsenfelsblockfelsnadel_poly
+    enabled: true
+  ax_flaechebesondererfunktionalerpraegung_poly:
+    id: ax_flaechebesondererfunktionalerpraegung_poly
+    label: ax_flaechebesondererfunktionalerpraegung_poly
+    enabled: true
+  ax_flaechegemischternutzung_poly:
+    id: ax_flaechegemischternutzung_poly
+    label: ax_flaechegemischternutzung_poly
+    enabled: true
+  ax_fliessgewaesser_poly:
+    id: ax_fliessgewaesser_poly
+    label: ax_fliessgewaesser_poly
+    enabled: true
+  ax_flugverkehr_poly:
+    id: ax_flugverkehr_poly
+    label: ax_flugverkehr_poly
+    enabled: true
+  ax_flugverkehrsanlage_point:
+    id: ax_flugverkehrsanlage_point
+    label: ax_flugverkehrsanlage_point
+    enabled: true
+  ax_flugverkehrsanlage_poly:
+    id: ax_flugverkehrsanlage_poly
+    label: ax_flugverkehrsanlage_poly
+    enabled: true
+  ax_friedhof_poly:
+    id: ax_friedhof_poly
+    label: ax_friedhof_poly
+    enabled: true
+  ax_gebiet_bundesland_poly:
+    id: ax_gebiet_bundesland_poly
+    label: ax_gebiet_bundesland_poly
+    enabled: true
+  ax_gebiet_kreis_poly:
+    id: ax_gebiet_kreis_poly
+    label: ax_gebiet_kreis_poly
+    enabled: true
+  ax_gebietsgrenze_line:
+    id: ax_gebietsgrenze_line
+    label: ax_gebietsgrenze_line
+    enabled: true
+  ax_gehoelz_poly:
+    id: ax_gehoelz_poly
+    label: ax_gehoelz_poly
+    enabled: true
+  ax_gewaesserachse_line:
+    id: ax_gewaesserachse_line
+    label: ax_gewaesserachse_line
+    enabled: true
+  ax_gewaessermerkmal_point:
+    id: ax_gewaessermerkmal_point
+    label: ax_gewaessermerkmal_point
+    enabled: true
+  ax_gewaesserstationierungsachse_line:
+    id: ax_gewaesserstationierungsachse_line
+    label: ax_gewaesserstationierungsachse_line
+    enabled: true
+  ax_gewann_point:
+    id: ax_gewann_point
+    label: ax_gewann_point
+    enabled: true
+  ax_gleis_line:
+    id: ax_gleis_line
+    label: ax_gleis_line
+    enabled: true
+  ax_hafen_poly:
+    id: ax_hafen_poly
+    label: ax_hafen_poly
+    enabled: true
+  ax_hafenbecken_poly:
+    id: ax_hafenbecken_poly
+    label: ax_hafenbecken_poly
+    enabled: true
+  ax_halde_poly:
+    id: ax_halde_poly
+    label: ax_halde_poly
+    enabled: true
+  ax_historischesbauwerkoderhistorischeeinrichtung_line:
+    id: ax_historischesbauwerkoderhistorischeeinrichtung_line
+    label: ax_historischesbauwerkoderhistorischeeinrichtung_line
+    enabled: true
+  ax_historischesbauwerkoderhistorischeeinrichtung_point:
+    id: ax_historischesbauwerkoderhistorischeeinrichtung_point
+    label: ax_historischesbauwerkoderhistorischeeinrichtung_point
+    enabled: true
+  ax_historischesbauwerkoderhistorischeeinrichtung_poly:
+    id: ax_historischesbauwerkoderhistorischeeinrichtung_poly
+    label: ax_historischesbauwerkoderhistorischeeinrichtung_poly
+    enabled: true
+  ax_hoehleneingang_point:
+    id: ax_hoehleneingang_point
+    label: ax_hoehleneingang_point
+    enabled: true
+  ax_industrieundgewerbeflaeche_poly:
+    id: ax_industrieundgewerbeflaeche_poly
+    label: ax_industrieundgewerbeflaeche_poly
+    enabled: true
+  ax_kommunalesgebiet_poly:
+    id: ax_kommunalesgebiet_poly
+    label: ax_kommunalesgebiet_poly
+    enabled: true
+  ax_kondominium_poly:
+    id: ax_kondominium_poly
+    label: ax_kondominium_poly
+    enabled: true
+  ax_landschaft_point:
+    id: ax_landschaft_point
+    label: ax_landschaft_point
+    enabled: true
+  ax_landwirtschaft_poly:
+    id: ax_landwirtschaft_poly
+    label: ax_landwirtschaft_poly
+    enabled: true
+  ax_leitung_line:
+    id: ax_leitung_line
+    label: ax_leitung_line
+    enabled: true
+  ax_moor_poly:
+    id: ax_moor_poly
+    label: ax_moor_poly
+    enabled: true
+  ax_naturumweltoderbodenschutzrecht_line:
+    id: ax_naturumweltoderbodenschutzrecht_line
+    label: ax_naturumweltoderbodenschutzrecht_line
+    enabled: true
+  ax_naturumweltoderbodenschutzrecht_point:
+    id: ax_naturumweltoderbodenschutzrecht_point
+    label: ax_naturumweltoderbodenschutzrecht_point
+    enabled: true
+  ax_naturumweltoderbodenschutzrecht_poly:
+    id: ax_naturumweltoderbodenschutzrecht_poly
+    label: ax_naturumweltoderbodenschutzrecht_poly
+    enabled: true
+  ax_ortslage_poly:
+    id: ax_ortslage_poly
+    label: ax_ortslage_poly
+    enabled: true
+  ax_platz_poly:
+    id: ax_platz_poly
+    label: ax_platz_poly
+    enabled: true
+  ax_schifffahrtsliniefaehrverkehr_line:
+    id: ax_schifffahrtsliniefaehrverkehr_line
+    label: ax_schifffahrtsliniefaehrverkehr_line
+    enabled: true
+  ax_schiffsverkehr_poly:
+    id: ax_schiffsverkehr_poly
+    label: ax_schiffsverkehr_poly
+    enabled: true
+  ax_schleuse_poly:
+    id: ax_schleuse_poly
+    label: ax_schleuse_poly
+    enabled: true
+  ax_schutzzone_poly:
+    id: ax_schutzzone_poly
+    label: ax_schutzzone_poly
+    enabled: true
+  ax_seilbahnschwebebahn_line:
+    id: ax_seilbahnschwebebahn_line
+    label: ax_seilbahnschwebebahn_line
+    enabled: true
+  ax_sickerstrecke_line:
+    id: ax_sickerstrecke_line
+    label: ax_sickerstrecke_line
+    enabled: true
+  ax_sonstigesbauwerkodersonstigeeinrichtung_line:
+    id: ax_sonstigesbauwerkodersonstigeeinrichtung_line
+    label: ax_sonstigesbauwerkodersonstigeeinrichtung_line
+    enabled: true
+  ax_sonstigesbauwerkodersonstigeeinrichtung_point:
+    id: ax_sonstigesbauwerkodersonstigeeinrichtung_point
+    label: ax_sonstigesbauwerkodersonstigeeinrichtung_point
+    enabled: true
+  ax_sonstigesbauwerkodersonstigeeinrichtung_poly:
+    id: ax_sonstigesbauwerkodersonstigeeinrichtung_poly
+    label: ax_sonstigesbauwerkodersonstigeeinrichtung_poly
+    enabled: true
+  ax_sonstigesrecht_poly:
+    id: ax_sonstigesrecht_poly
+    label: ax_sonstigesrecht_poly
+    enabled: true
+  ax_sportfreizeitunderholungsflaeche_poly:
+    id: ax_sportfreizeitunderholungsflaeche_poly
+    label: ax_sportfreizeitunderholungsflaeche_poly
+    enabled: true
+  ax_stehendesgewaesser_poly:
+    id: ax_stehendesgewaesser_poly
+    label: ax_stehendesgewaesser_poly
+    enabled: true
+  ax_strassenachse_line:
+    id: ax_strassenachse_line
+    label: ax_strassenachse_line
+    enabled: true
+  ax_strassenverkehr_poly:
+    id: ax_strassenverkehr_poly
+    label: ax_strassenverkehr_poly
+    enabled: true
+  ax_strassenverkehrsanlage_line:
+    id: ax_strassenverkehrsanlage_line
+    label: ax_strassenverkehrsanlage_line
+    enabled: true
+  ax_strassenverkehrsanlage_point:
+    id: ax_strassenverkehrsanlage_point
+    label: ax_strassenverkehrsanlage_point
+    enabled: true
+  ax_sumpf_poly:
+    id: ax_sumpf_poly
+    label: ax_sumpf_poly
+    enabled: true
+  ax_tagebaugrubesteinbruch_poly:
+    id: ax_tagebaugrubesteinbruch_poly
+    label: ax_tagebaugrubesteinbruch_poly
+    enabled: true
+  ax_transportanlage_line:
+    id: ax_transportanlage_line
+    label: ax_transportanlage_line
+    enabled: true
+  ax_transportanlage_point:
+    id: ax_transportanlage_point
+    label: ax_transportanlage_point
+    enabled: true
+  ax_turm_point:
+    id: ax_turm_point
+    label: ax_turm_point
+    enabled: true
+  ax_unlandvegetationsloseflaeche_poly:
+    id: ax_unlandvegetationsloseflaeche_poly
+    label: ax_unlandvegetationsloseflaeche_poly
+    enabled: true
+  ax_vegetationsmerkmal_line:
+    id: ax_vegetationsmerkmal_line
+    label: ax_vegetationsmerkmal_line
+    enabled: true
+  ax_vegetationsmerkmal_point:
+    id: ax_vegetationsmerkmal_point
+    label: ax_vegetationsmerkmal_point
+    enabled: true
+  ax_vegetationsmerkmal_poly:
+    id: ax_vegetationsmerkmal_poly
+    label: ax_vegetationsmerkmal_poly
+    enabled: true
+  ax_vorratsbehaelterspeicherbauwerk_point:
+    id: ax_vorratsbehaelterspeicherbauwerk_point
+    label: ax_vorratsbehaelterspeicherbauwerk_point
+    enabled: true
+  ax_vorratsbehaelterspeicherbauwerk_poly:
+    id: ax_vorratsbehaelterspeicherbauwerk_poly
+    label: ax_vorratsbehaelterspeicherbauwerk_poly
+    enabled: true
+  ax_wald:
+    id: ax_wald
+    label: ax_wald
+    enabled: true
+  ax_wald_poly:
+    id: ax_wald_poly
+    label: ax_wald_poly
+    enabled: true
+  ax_wegpfadsteig_line:
+    id: ax_wegpfadsteig_line
+    label: ax_wegpfadsteig_line
+    enabled: true
+  ax_wohnbauflaeche_poly:
+    id: ax_wohnbauflaeche_poly
+    label: ax_wohnbauflaeche_poly
+    enabled: true
+  ax_wohnplatz_point:
+    id: ax_wohnplatz_point
+    label: ax_wohnplatz_point
+    enabled: true
+  fdv01_b:
+    id: fdv01_b
+    label: fdv01_b
+    enabled: true
+  geb01_f:
+    id: geb01_f
+    label: geb01_f
+    enabled: true
+  geb01_l:
+    id: geb01_l
+    label: geb01_l
+    enabled: true
+  geb02_p:
+    id: geb02_p
+    label: geb02_p
+    enabled: true
+  geb03_f:
+    id: geb03_f
+    label: geb03_f
+    enabled: true
+  geb03_l:
+    id: geb03_l
+    label: geb03_l
+    enabled: true
+  geb03_p:
+    id: geb03_p
+    label: geb03_p
+    enabled: true
+  gew01_f:
+    id: gew01_f
+    label: gew01_f
+    enabled: true
+  gew01_l:
+    id: gew01_l
+    label: gew01_l
+    enabled: true
+  gew02_l:
+    id: gew02_l
+    label: gew02_l
+    enabled: true
+  gew02_p:
+    id: gew02_p
+    label: gew02_p
+    enabled: true
+  gew03_l:
+    id: gew03_l
+    label: gew03_l
+    enabled: true
+  hdu01_b:
+    id: hdu01_b
+    label: hdu01_b
+    enabled: true
+  rel01_f:
+    id: rel01_f
+    label: rel01_f
+    enabled: true
+  rel01_l:
+    id: rel01_l
+    label: rel01_l
+    enabled: true
+  rel01_p:
+    id: rel01_p
+    label: rel01_p
+    enabled: true
+  sie01_f:
+    id: sie01_f
+    label: sie01_f
+    enabled: true
+  sie02_f:
+    id: sie02_f
+    label: sie02_f
+    enabled: true
+  sie03_f:
+    id: sie03_f
+    label: sie03_f
+    enabled: true
+  sie03_l:
+    id: sie03_l
+    label: sie03_l
+    enabled: true
+  sie03_p:
+    id: sie03_p
+    label: sie03_p
+    enabled: true
+  sie04_f:
+    id: sie04_f
+    label: sie04_f
+    enabled: true
+  sie05_p:
+    id: sie05_p
+    label: sie05_p
+    enabled: true
+  veg01_f:
+    id: veg01_f
+    label: veg01_f
+    enabled: true
+  veg02_f:
+    id: veg02_f
+    label: veg02_f
+    enabled: true
+  veg03_f:
+    id: veg03_f
+    label: veg03_f
+    enabled: true
+  veg04_f:
+    id: veg04_f
+    label: veg04_f
+    enabled: true
+  veg04_l:
+    id: veg04_l
+    label: veg04_l
+    enabled: true
+  veg04_p:
+    id: veg04_p
+    label: veg04_p
+    enabled: true
+  ver01_f:
+    id: ver01_f
+    label: ver01_f
+    enabled: true
+  ver01_l:
+    id: ver01_l
+    label: ver01_l
+    enabled: true
+  ver02_l:
+    id: ver02_l
+    label: ver02_l
+    enabled: true
+  ver03_f:
+    id: ver03_f
+    label: ver03_f
+    enabled: true
+  ver03_l:
+    id: ver03_l
+    label: ver03_l
+    enabled: true
+  ver04_f:
+    id: ver04_f
+    label: ver04_f
+    enabled: true
+  ver05_f:
+    id: ver05_f
+    label: ver05_f
+    enabled: true
+  ver05_l:
+    id: ver05_l
+    label: ver05_l
+    enabled: true
+  ver06_f:
+    id: ver06_f
+    label: ver06_f
+    enabled: true
+  ver06_l:
+    id: ver06_l
+    label: ver06_l
+    enabled: true
+  ver06_p:
+    id: ver06_p
+    label: ver06_p
+    enabled: true
