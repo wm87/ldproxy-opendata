@@ -98,3 +98,8 @@ http://localhost:80/
 ![ATKIS_03](screen_by_03.png "atkis_03")
 
 ![ATKIS_04](screen_by_04.png "atkis_04")
+
+
+## 📄 Lizenzhinweis
+
+Dieses Projekt basiert teilweise auf dem Open-Source-Projekt [ldproxy](https://github.com/ldproxy/ldproxy), das unter der [Mozilla Public License 2.0 (MPL-2.0)](https://www.mozilla.org/MPL/2.0/) steht.
