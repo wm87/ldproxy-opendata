@@ -1,7 +1,7 @@
 
 services:
   ldproxy:
-    image: iide/ldproxy:4.4.0
+    image: iide/ldproxy:4.4.1
     container_name: ldproxy
     network_mode: "host"
     volumes:
